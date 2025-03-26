@@ -15,13 +15,17 @@
       data-type="module">
       import React, { useState } from "https://esm.sh/react@19/?dev";
       import ReactDOM from "https://esm.sh/react-dom@19/client?dev";
-      import { Button } from "https://esm.sh/@mui/material?dev";
+      import Button from "https://esm.sh/@mui/material/Button?dev";
       function App() {
         const [count, setCount] = useState(0);
         return (
           <>
             <h1>{count}</h1>
-            <Button onClick={() => setCount(count + 1)}>Increment</Button>
+            <Button
+              variant="contained"
+              onClick={() => setCount(count + 1)}>
+              Dupa
+            </Button>
           </>
         );
       }
